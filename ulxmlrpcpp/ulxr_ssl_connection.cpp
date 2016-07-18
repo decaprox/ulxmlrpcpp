@@ -95,7 +95,7 @@ ULXR_API_IMPL(void)
 ULXR_API_IMPL(void) SSLConnection::initializeCTX()
 {
   ULXR_TRACE(ULXR_PCHAR("initializeCTX"));
-  SSL_METHOD *meth = SSLv23_method();
+  const SSL_METHOD *meth = SSLv23_method();
   ssl_ctx = SSL_CTX_new (meth);
   if (!ssl_ctx)
   {
