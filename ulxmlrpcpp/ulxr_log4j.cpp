@@ -41,7 +41,9 @@
 #include <ulxmlrpcpp/ulxr_mutex.h>
 #endif
 
+#ifdef HAVE_FTIME
 #include <sys/timeb.h>
+#endif
 
 #ifdef __BORLANDC__
 #include <strstream>
